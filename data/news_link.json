@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T02:22:27+09:00",
+  "generated_at": "2026-08-23T03:33:12+09:00",
   "keywords": [
     "생성형 AI",
     "반도체",
@@ -9,6 +9,16 @@
   ],
   "count": 300,
   "items": [
+    {
+      "id": "c3221821e2499dc8d125096ba72e8a8103089b0f",
+      "title": "Wisr AI, 캐나다 톱100 AI 스타트업 선정…같은 날 RSU 261만주 깜짝 부여",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0taVlpdjJoX1laVkF2U2R5Y2FFM3d4Z09jeFA2YUVFVkY0VjRxdXc1bU1kOGZabUlNcXZGSGxMS3cyMGdfamJNMURIcEpDZ2VqWjNyT01B?oc=5",
+      "source": "위키트리",
+      "published_at": "2026-08-23T02:36:00+09:00",
+      "keywords": [
+        "스타트업"
+      ]
+    },
     {
       "id": "d31d471fb0b24964a5ff793d496eaeb716580f00",
       "title": "이성원 국립현대미술관장, AI·VR로 현대미술 접근성 혁신 나선다",
@@ -80,6 +90,16 @@
       ]
     },
     {
+      "id": "f87a82ab75422eff6dae05df8cf61f7c0f83e606",
+      "title": "[증시 프리즘] \"40조원 자사주 소각의 힘\"…반도체 대형주 수급 불씨 살렸다",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKS3prRG5wQ01VZFdwX19CbWFNY2o5SldpZk5RMTN0dHYwZ09YYndYOFBNbVktTlJWMEtNU0RRVTlZUGJyMG9wYmZhRVRpQ0UzSkFoRDVnTGk0TUhNUHZLYjcwWllhR0l0YkxPaDZKc0I?oc=5",
+      "source": "thefairnews.co.kr",
+      "published_at": "2026-08-23T00:00:00+09:00",
+      "keywords": [
+        "반도체"
+      ]
+    },
+    {
       "id": "ac6a0f0db6f28747cff8f1e87c62e6ae54b5fcbc",
       "title": "반도체 세수를 둘러싼 정치권 논쟁…미래대응기금 두고 여야 갈등 최고조",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE83ZGEwSUdkcEhaemFhaU8tal9uVWwzcE4yWnVsRmh5aFlsam8xTElTTGhFRjU1eVJKSVNxT01PRVYybE1RUFVjMzFJSFNkbnJPOHhkeHlXZ1c4dnVTTndxQWRudGJHNFFV?oc=5",
@@ -130,11 +150,11 @@
       ]
     },
     {
-      "id": "093e720622a215783a72b3d41f598f59b705c893",
+      "id": "200e1eed68963f417fad19b85e067bdc0ce78877",
       "title": "서학개미, '삼전닉스' 담은 美ETF 1000억 넘게 샀다",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBnQ0pfVkd2aG9mM2Fmc21KS0RXeVMzSTZhSm5qZWpWQTYwOFkxMXQyLS14c2pEeUc1cmNzM2pLUldiYjJmZkJ1eXFWRklJUEk?oc=5",
-      "source": "v.daum.net",
-      "published_at": "2026-08-22T22:04:00+09:00",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB5VFFVODNERURoVTJ4c09WUi0zOTZzYnZIdXpZSDBEREwyWFN3SWYtamJUMGFuN0llenptZW9oMS1nekdQNkNWUERGMA?oc=5",
+      "source": "아이뉴스24",
+      "published_at": "2026-08-22T22:02:26+09:00",
       "keywords": [
         "주식시장"
       ]
@@ -722,6 +742,16 @@
       ]
     },
     {
+      "id": "1fb6ffcc55f3c44a4e44d514c41ace32c18e3907",
+      "title": "美 국채금리 눌렀더니 달러 흔들…금·비트코인 '화폐가치 희석' 베팅 부상",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nOGNrZnB2S0JldGNtUHlGUlB5RVlja2xSS3lPNXJsa0psa3hnMC1ZWWxTLXp6ZUlkMEViU1VhS050SGZHNnpobzI0MlY4aHRydGJVcmRrcUpsaThsRG1OcHVHd003MGVX?oc=5",
+      "source": "ebn.co.kr",
+      "published_at": "2026-08-22T14:09:11+09:00",
+      "keywords": [
+        "금리"
+      ]
+    },
+    {
       "id": "05fadb22716c9e96bf2d5bf805dc29aa2f8e0244",
       "title": "미국의 반도체 투자 압박 규탄, “방해 물리치고 호남 반도체 성사해야”",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5pN2R4ZXFXX2l0WG9sV2owNVBXb2NOZi1hanc1NzduUGhzRE1lUVlleVJrZ3Q5Z01kVkxCRnVmeHl4QW5GbG5SWGJuVWZfbjh3Rk1WN2lnenM1NGJhWUpXRzlIQmZyU3M?oc=5",
@@ -789,6 +819,16 @@
       "published_at": "2026-08-22T13:21:33+09:00",
       "keywords": [
         "반도체"
+      ]
+    },
+    {
+      "id": "51b1eddad4f9ac9e76a54a9ebe4a46d6db11a10c",
+      "title": "한은 금리·성장률 전망 '동시 공개'…다음주 경제 일정 촉각",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9QWUZWV2h2NWhkelVLRTdiamQ3VU5qNkNxWEJCQWUyM1Q2eVNoTkJMUHFDclJYRkJSZXhkUU14cm1URDdXX1NqbkNPQWVDSkV2R0xqc1lva0JqcDNLMndRWlVEQU1WdzlI?oc=5",
+      "source": "ebn.co.kr",
+      "published_at": "2026-08-22T13:20:48+09:00",
+      "keywords": [
+        "금리"
       ]
     },
     {
@@ -1984,6 +2024,16 @@
       ]
     },
     {
+      "id": "6d42e16e066537449e9295820bd98eea28928c55",
+      "title": "조각투자 장내시장 개설: 미술품·부동산도 주식처럼 거래해요 🖼️",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1GSUZ1N2RjeWEwTHQzMmswSHJ5S2VSU25YN1lyLWotZ0RrR21Zcmh5Nm9YZ19YTXVkNVdYTG9mM2x6SW9OS0dkdFA5MV9uU0VRYklNQkhR?oc=5",
+      "source": "뉴닉",
+      "published_at": "2026-08-22T08:00:00+09:00",
+      "keywords": [
+        "주식시장"
+      ]
+    },
+    {
       "id": "fd4c6400a899b3d4eedd184e9bb3496d8c4c7b3c",
       "title": "\"8월 금리인상 전망…점도표 중간값 3.25%·3.5% 팽팽\"",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5kUHdqd0x0VmFQYlNkeXRsTVlVR3hzVEc1QXlLNi1qZk8tNUZKaDlmWThLaUNvTXVaN2hYN211bzVUR19TYlk4SVJBNENjbnhVZDdpMklSS1pPU3ozdFRBcDYxMFNYZGNSX044d25NTVHSAXRBVV95cUxQbExPSFFfZC16bjZVTjlDazdKb1dZb3RVbXdYQ1UxOUI2Q01aaERZQk5kV09mUGNFaEszMXZXZWRZekgzX3drQVlFZVFfTTI0a09pZ2laaHZlUExTTG9YMFdRZW1sZURDendHX1c3YmZ6MkIxOA?oc=5",
@@ -2961,56 +3011,6 @@
       "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE52TFJCTU5zUEJvWG0yZzhHY0NJeTRYUTNsNTFmMWxIRkZyLXRLbk1FVTNhbW45UkFwdk00eUNwdmJjek1wNy14ZUx3RU1WMlFJUFhCakF4VnlYQnljN3FkSU9qMXBDNzBfeC1TQ0FKZWFLS3BZ?oc=5",
       "source": "대한경제",
       "published_at": "2026-08-21T20:15:44+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
-      "id": "8af2bb94f4feb6e563555530c64543648f2d523d",
-      "title": "퀄리타스반도체, 7억 규모 IP 계약 속 300억 CB 운영자금 조달…감사 핵심쟁점과 지배구조 변화 주목",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBsN0wwRUJDSjRLalJJRUVwV1ZxbE9xcGIzQ0gzR1lzRXVqM05ONnBodGVlZWE2Rk1HNnVrVDRITDhGT19ia1VCVElXRnYwVldGQ1psQXF0SkxHMW8?oc=5",
-      "source": "데일리연합",
-      "published_at": "2026-08-21T20:10:05+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
-      "id": "61ac6bfc7925ef63be0f5d43eb01ab35ab5db8ff",
-      "title": "삼전 비반도체 \"우리도 1000주 달라\"…현대차는 10년 만에 파업",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5QckRGUVBSOElaajZRVkFRbzFiNFk2aG4zR2Y0UW5aYWhLT3d3WlFRSFJRZUtGQjAxNlpKekJoUmZzUGdTQTQ3OHZ3UjJIekdiTUtOaw?oc=5",
-      "source": "JTBC",
-      "published_at": "2026-08-21T20:09:00+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
-      "id": "4fb628162c7c9537a51b775a326fc78930566f36",
-      "title": "반도체 초과세수로 ‘100조 미래기금’…필요할 때 꺼내 쓴다",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlNnRIVUxXNEE0cDFvMV90eHBmZVhhWFpVWUlwck9kdlVhM3dCajdvV1Y1ZmowTnViTHc5Z0xLeF9TLWdhYm45MHJvUWw5QmY0Ymo5Ug?oc=5",
-      "source": "JTBC",
-      "published_at": "2026-08-21T19:57:00+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
-      "id": "a3a918366f4f8a6c01abd6c167009fbae4f6dedf",
-      "title": "청주시, 반도체 기업 나유타 투자 협약",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE94WVRfakFIejNIeC1NbmRCTTA1dGdqeDJ6MTVGVnhNdkozTWVoM1NzMHdnMnlScm9VVm81Z0wxdThFa2dkbVZhck44ekpqWGUyaVUzWDlPenhPWFc3UDJBeWwwSlg0Zw?oc=5",
-      "source": "KBS 뉴스",
-      "published_at": "2026-08-21T19:41:00+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
-      "id": "03b1c8d0e961a50af900930a849f22e4975909ab",
-      "title": "삼성전자, 반도체 협력사에 789억 푼다…안전·생산성 인센티브",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1LQXJseUFRdkxrSjZuMDZfaW9hSzlXOWpGYTRNd25UUFV0aVBXSUE1VTVCeXpZRV8xeEdvNlN1TW9vRnhlUm1DbllSWFl4OXZ0ZFNHU2hva2lJNHJ2?oc=5",
-      "source": "뉴스핌",
-      "published_at": "2026-08-21T19:39:00+09:00",
       "keywords": [
         "반도체"
       ]
