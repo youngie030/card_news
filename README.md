@@ -87,11 +87,6 @@ python -m http.server 8765
 
 `.github/workflows/update-news.yml`이 매시간(UTC 정각) 실행되며, Actions 탭에서 수동 실행도 가능합니다. 수집 결과가 이전과 완전히 같으면 커밋하지 않습니다.
 
-## 문서
-
-- [`requirements.md`](requirements.md) — 요구사항 명세서
-- [`implementation_plan_and_process.md`](implementation_plan_and_process.md) — 구현 계획 및 진행 상황
-
 ## 출처
 
 뉴스 메타데이터는 [Google News RSS](https://news.google.com/)에서 가져옵니다.

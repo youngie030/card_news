@@ -26,7 +26,9 @@ credentials/
 .DS_Store
 Thumbs.db
 
-# AI 지시문 — 커밋 금지
+# AI 지시문 및 AI 생성 작업 문서 — 커밋 금지
 CLAUDE.md
 USERRULE.md
 .claude/
+requirements.md
+implementation_plan_and_process.md
