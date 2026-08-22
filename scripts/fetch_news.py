@@ -47,6 +47,8 @@ TRACKING_PARAMS = {
 }
 
 SOURCE_SUFFIX_RE = re.compile(r"\s+-\s+[^-]{1,40}$")
+# 제목 비교용: 공백과 문장부호를 모두 걷어낸다. 한글·한자는 \w 이므로 남는다.
+TITLE_NOISE_RE = re.compile(r"[\s\W_]+", re.UNICODE)
 
 
 def log(message: str) -> None:
@@ -212,6 +214,45 @@ def merge_items(existing: list[dict], incoming: list[dict]) -> list[dict]:
     return list(merged.values())
 
 
+def normalize_title(title: str) -> str:
+    """비교용 제목. 공백·문장부호·대소문자 차이를 없앤다. [FR-C-14]"""
+    return TITLE_NOISE_RE.sub("", title or "").lower()
+
+
+def dedupe_by_title(items: list[dict]) -> list[dict]:
+    """제목이 같은 기사를 하나로 합친다. [FR-C-14]
+
+    통신사 기사를 여러 매체가 그대로 싣는 경우 링크가 달라 id 중복제거를
+    통과한다. 가장 먼저 발행된 항목을 남기고 나머지의 키워드를 합친다.
+    발행시각이 같으면 id가 작은 쪽을 남겨 실행마다 결과가 흔들리지 않게 한다.
+    """
+    groups: dict[str, list[dict]] = {}
+    kept: list[dict] = []
+
+    for item in items:
+        key = normalize_title(item.get("title", ""))
+        if key:
+            groups.setdefault(key, []).append(item)
+        else:
+            kept.append(item)  # 제목이 없으면 판단할 근거가 없으니 그대로 둔다.
+
+    for group in groups.values():
+        winner = min(
+            group,
+            key=lambda i: (parse_published(i.get("published_at", "")), i.get("id", "")),
+        )
+
+        keywords = list(winner.get("keywords") or [])
+        for other in group:
+            for keyword in other.get("keywords") or []:
+                if keyword not in keywords:
+                    keywords.append(keyword)
+
+        kept.append({**winner, "keywords": keywords})
+
+    return kept
+
+
 def parse_published(value: str) -> datetime:
     """published_at 문자열을 datetime으로 바꾼다. 실패하면 아주 오래된 값으로 본다."""
     try:
@@ -229,29 +270,52 @@ def prune(items: list[dict]) -> list[dict]:
     return fresh[:MAX_ITEMS]
 
 
-def save(path: Path, keywords: list[str], items: list[dict]) -> None:
-    """diff가 최소화되도록 고정된 형식으로 저장한다. [FR-D-01~04]"""
+def save(path: Path, keywords: list[str], items: list[dict]) -> bool:
+    """내용이 실제로 바뀐 경우에만 고정된 형식으로 저장한다. [FR-D-01~05]
+
+    `generated_at`을 매번 새로 쓰면 기사 목록이 그대로여도 파일이 달라져
+    빈 커밋 방지(FR-D-05)가 무력화된다. 그래서 시각을 넣기 전에 기사 목록과
+    키워드를 기존 파일과 먼저 비교하고, 같으면 파일에 손대지 않는다.
+    반환값은 파일을 새로 썼는지 여부다.
+    """
+    payload_items = [
+        {
+            "id": item["id"],
+            "title": item.get("title", ""),
+            "link": item.get("link", ""),
+            "source": item.get("source", ""),
+            "published_at": item.get("published_at", ""),
+            "keywords": item.get("keywords", []),
+        }
+        for item in items
+    ]
+
+    if path.exists():
+        try:
+            with path.open("r", encoding="utf-8") as handle:
+                previous = json.load(handle)
+        except (json.JSONDecodeError, OSError):
+            previous = None
+
+        if (
+            isinstance(previous, dict)
+            and previous.get("keywords") == keywords
+            and previous.get("items") == payload_items
+        ):
+            return False
+
     payload = {
         "generated_at": datetime.now(KST).replace(microsecond=0).isoformat(),
         "keywords": keywords,
-        "count": len(items),
-        "items": [
-            {
-                "id": item["id"],
-                "title": item.get("title", ""),
-                "link": item.get("link", ""),
-                "source": item.get("source", ""),
-                "published_at": item.get("published_at", ""),
-                "keywords": item.get("keywords", []),
-            }
-            for item in items
-        ],
+        "count": len(payload_items),
+        "items": payload_items,
     }
 
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="\n") as handle:
         json.dump(payload, handle, ensure_ascii=False, indent=2)
         handle.write("\n")
+    return True
 
 
 def load_keywords(path: Path) -> list[str]:
@@ -284,15 +348,19 @@ def main() -> int:
         return 1  # [FR-C-12]
 
     existing = load_existing(OUTPUT_PATH)
-    merged = prune(merge_items(existing, incoming))
-    save(OUTPUT_PATH, keywords, merged)
+    merged = merge_items(existing, incoming)          # [FR-C-07] 링크 기준
+    deduped = dedupe_by_title(merged)                 # [FR-C-14] 제목 기준
+    final = prune(deduped)                            # [FR-C-09, FR-C-10]
+    written = save(OUTPUT_PATH, keywords, final)      # [FR-D-05]
 
     log(
-        f"저장 완료: {OUTPUT_PATH.relative_to(ROOT).as_posix()} "
-        f"(기존 {len(existing)}건 + 수집 {len(incoming)}건 → 최종 {len(merged)}건"
+        f"{'저장 완료' if written else '변화 없음 — 파일 유지'}: "
+        f"{OUTPUT_PATH.relative_to(ROOT).as_posix()} "
+        f"(기존 {len(existing)}건 + 수집 {len(incoming)}건 → 링크 중복제거 {len(merged)}건 "
+        f"→ 제목 중복 {len(merged) - len(deduped)}건 제거 → 최종 {len(final)}건"
         f"{f', 실패 {failures}개 키워드' if failures else ''})"
     )
-    export_count(len(merged))
+    export_count(len(final))
     return 0
 
 

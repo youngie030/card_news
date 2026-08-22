@@ -1,8 +1,8 @@
 # card_news 구현 계획 및 진행 상황
 
-- 문서 버전: v1.3
+- 문서 버전: v1.5
 - 최종 수정일: 2026-08-22
-- 대응 요구사항: `requirements.md` v1.2
+- 대응 요구사항: `requirements.md` v1.4
 
 ---
 
@@ -68,8 +68,9 @@ card_news/
 | FR-C-11 | `fetch_news.py::main` | 키워드 루프를 `try/except`로 감싸고 실패 카운트 집계 |
 | FR-C-12 | `fetch_news.py::main` | 전량 실패 시 저장 생략 + `sys.exit(1)` |
 | FR-C-13 | `fetch_news.py::fetch_feed` | `urllib` 요청에 UA 헤더 + `timeout=15`, 루프 말미 `time.sleep(1)` |
+| FR-C-14 | `fetch_news.py::normalize_title`, `dedupe_by_title` | 공백·문장부호 제거 후 소문자화한 제목으로 그룹핑, `min(published_at, id)`로 승자 선택 후 키워드 합집합 |
 | FR-D-01~04 | `fetch_news.py::save` | `json.dump(..., ensure_ascii=False, indent=2)`, `encoding="utf-8"`, `newline="\n"` |
-| FR-D-05 | `update-news.yml` | `git diff --quiet -- data/news_link.json`로 변경 여부 판정 |
+| FR-D-05 | `fetch_news.py::save` + `update-news.yml` | `save`가 기사 목록·키워드를 기존 파일과 먼저 비교해 같으면 쓰지 않고 `False` 반환(`generated_at`도 갱신 안 함). 워크플로는 `git status --porcelain -- data/news_link.json`으로 최종 판정 |
 | FR-W-01 | `app.js::loadNews` | `fetch('data/news_link.json?t=' + Date.now())` |
 | FR-W-02 | `app.js::renderCard` | 제목(최대 4줄)/매체/상대시각/키워드 배지 조립 |
 | FR-W-03 | `app.js::renderCard` | 카드 루트를 `<a target="_blank" rel="noopener noreferrer">`로 생성 |
@@ -90,7 +91,7 @@ card_news/
 | FR-W-18 | `style.css` `.grid`, `.card` | `minmax(280px, 1fr)` / `gap: 14px` / 카드 패딩 `16px 18px` / 제목 행간 1.5 |
 | FR-A-01 | `update-news.yml` | `schedule: - cron: "0 * * * *"` |
 | FR-A-02 | `update-news.yml` | `workflow_dispatch:` |
-| FR-A-03 | `update-news.yml` | diff 있을 때만 `git commit && git push` |
+| FR-A-03 | `update-news.yml` | `git status --porcelain`로 변경 여부 판정 후 `git commit && git push`. `git diff --quiet`는 추적되지 않는 파일을 놓쳐서 쓰지 않는다 |
 | FR-A-04 | `update-news.yml` | `user.name=github-actions[bot]`, `user.email=41898282+github-actions[bot]@users.noreply.github.com` |
 | FR-A-05 | `update-news.yml` | `permissions: contents: write` |
 | FR-A-06 | `update-news.yml` | 항목 수를 스크립트 stdout에서 읽어 커밋 메시지에 삽입 |
@@ -174,6 +175,7 @@ index.html → app.js: fetch → 필터 적용 → 카드 그리드 렌더
 - **멱등하지 않고 누적적이다.** 매 실행은 기존 데이터에 더하는 연산이며, 삭제는 오직 만료(7일)·상한(300) 규칙으로만 일어난다. 일시적 RSS 장애가 데이터 유실로 이어지지 않는다.
 - **부분 실패를 허용한다.** 키워드 5개 중 1개가 실패해도 나머지 4개 결과는 저장된다. 전량 실패일 때만 저장을 건너뛰고 실패로 종료한다.
 - **출력이 안정적이다.** 정렬 순서 고정 + 들여쓰기 고정 + `ensure_ascii=False`로, 실제 내용 변화가 있을 때만 diff가 발생한다. 매시간 실행에서 커밋 노이즈를 줄이는 핵심 장치다.
+- **중복제거를 두 단계로 한다.** 1차는 정규화한 링크의 SHA-1(`id`)로 같은 URL을 걷어내고, 2차는 정규화한 제목으로 같은 기사를 걷어낸다. 통신사 기사를 여러 매체가 그대로 싣는 경우 URL이 달라 1차를 통과하기 때문이다. 2차에서 남길 항목은 `(발행시각, id)` 최솟값으로 정해 실행마다 결과가 흔들리지 않게 했다 — 결과가 흔들리면 내용 변화가 없어도 매시간 diff가 생겨 위 안정성이 무너진다.
 
 ### 5.3 프론트엔드 상태 모델
 
@@ -326,17 +328,41 @@ Phase 1에서 실제 피드를 받아 확인한 결과, 구글뉴스 검색 RSS�
 ### Phase 3 — 배포
 - [x] `README.md` 갱신 (소개 / 로컬 실행 / 키워드 변경법)
 - [x] `.gitignore`에 AI 지시문 파일 추가 (NFR-04)
-- [ ] 커밋 제외 대상 점검: `access.json`·`CLAUDE.md`·`USERRULE.md` (완료기준 10, NFR-03~04)
-- [ ] 최초 커밋 및 `main` 푸시
-- [ ] 저장소 public 전환 (사용자 직접 수행, FR-P-04)
-- [ ] Pages 활성화: Deploy from branch / `main` / `(root)`
-- [ ] 배포 URL에서 동작 확인 (완료기준 9)
+- [x] 커밋 제외 대상 점검: `access.json`·`CLAUDE.md`·`USERRULE.md` (완료기준 10, NFR-03~04)
+- [x] 최초 커밋 및 `main` 푸시 (`ddfa60c`, 12개 파일)
+- [x] 저장소 public 전환 (사용자 직접 수행, FR-P-04)
+- [x] Pages 활성화: Deploy from branch / `main` / `(root)`
+- [x] 배포 URL에서 동작 확인 (완료기준 9)
+
+**배포 주소: https://youngie030.github.io/card_news/**
+
+> **Phase 3 배포 검증 결과 (2026-08-22)**
+> 라이브 사이트를 CDP로 구동해 로컬과 동일한 항목을 재검증했다.
+> - 정적 자원 4종 전부 200 (`/`, `style.css`, `app.js`, `news_link.json` 160KB)
+> - 가로 오버플로: 375 / 820 / 1440 전부 없음, 컬럼 1 / 2 / 4열
+> - 인터랙션 자동 검증 18항목 전부 통과 (로컬과 동일)
+> - 카드 링크 5건을 실제로 따라가 파이낸셜뉴스·머니투데이·전자신문·네이버블로그 원문 도메인 도달 확인 (완료기준 4)
+
+> **Phase 3 git 작업 기록 (2026-08-22)**
+> 히스토리 전수 조사 결과 지금까지 커밋된 파일은 `.gitignore`, `README.md` 둘뿐이었다 — 크리덴셜이 커밋된 이력 없음, public 전환해도 안전.
+> 원격에 `a8d9596 Update README.md`(placeholder에 `ggg` 추가)가 있어 푸시가 거절되었고, rebase로 직선 히스토리를 유지하며 새 README를 채택해 해결했다.
+> 토큰은 push 명령에서만 인라인으로 사용했고 `.git/config`의 `origin`은 토큰 없는 URL 그대로다.
 
 ### Phase 4 — 자동화 및 마무리
-- [ ] `.github/workflows/update-news.yml` 작성 (FR-A-01~08)
+- [x] `scripts/fetch_news.py` — 제목 기준 2차 중복제거 (FR-C-14)
+- [x] 중복제거 검증: 출력 내 제목 중복 0그룹, 멱등, 입력 순서 무관 (완료기준 11)
+- [x] `.github/workflows/update-news.yml` 작성 (FR-A-01~08)
+- [x] 워크플로 YAML 파싱 검증
+- [x] `save()` 결함 수정 — 내용 무변화 시 파일 미기록 (FR-D-05)
+- [x] 로컬 연속 2회 실행으로 무변화 시 파일 미변경 확인 (완료기준 8 근거)
+- [ ] 커밋·푸시
 - [ ] 수동 실행으로 커밋 확인 (완료기준 7)
 - [ ] 무변경 재실행으로 빈 커밋 미발생 확인 (완료기준 8)
-- [ ] 봇 커밋 후 Pages가 재배포되는지 확인 (§6 주의 참조)
+- [ ] 봇 커밋 후 Pages가 재배포되는지 확인 (아래 주의 참조)
+
+> **FR-C-14 적용 결과 (2026-08-22)**
+> 링크 기준 중복제거 후 637건 → 제목 기준으로 35건 추가 제거 → 상한 적용 300건.
+> 결과물에 동일 제목 그룹 0개. 같은 입력으로 두 번 돌려도, 입력 순서를 뒤집어도 살아남는 항목이 동일함을 확인.
 
 > **주의 — 봇 커밋과 Pages 재배포**
 > 브랜치 기반 Pages는 `main`에 푸시가 들어오면 `pages-build-deployment`가 자동으로 돈다. 다만 `GITHUB_TOKEN`으로 만든 푸시는 일반 워크플로를 트리거하지 않는 규칙이 있어, 봇 커밋에서도 재배포가 도는지 Phase 4에서 실제로 확인해야 한다. 만약 돌지 않으면 Pages 소스를 "GitHub Actions"로 바꾸고 `actions/deploy-pages`를 워크플로에 붙이는 방식으로 전환한다. (FR-P-01 변경 필요)
@@ -368,6 +394,8 @@ Phase 1에서 실제 피드를 받아 확인한 결과, 구글뉴스 검색 RSS�
 | 버전 | 일자 | 내용 |
 |---|---|---|
 | v1.0 | 2026-08-22 | 초기 구현 계획 수립. Phase 0 문서화 완료 |
+| v1.5 | 2026-08-22 | `save()`가 매 실행마다 `generated_at`을 갱신해 FR-D-05를 무력화하던 결함 수정. 내용 비교 후 무변화면 파일을 쓰지 않도록 변경하고 매핑 테이블 갱신. 로컬 연속 2회 실행으로 검증 |
+| v1.4 | 2026-08-22 | Phase 3 배포 완료(https://youngie030.github.io/card_news/). 제목 기준 2차 중복제거 구현(FR-C-14)과 §5.2 원칙 추가, `update-news.yml` 작성 및 매핑 반영 |
 | v1.3 | 2026-08-22 | 사용자 요청으로 Phase 3(자동화)과 Phase 4(배포) 순서 교체 — 배포를 선행해야 Actions를 실제로 검증할 수 있다. `README.md` 작성, `.gitignore`에 AI 지시문 파일 추가. 봇 커밋 시 Pages 재배포 확인 항목 추가 |
 | v1.2 | 2026-08-22 | Phase 2 구현 완료. requirements.md v1.2에 맞춰 샌드 옐로우 팔레트(§5.5)·키워드 색상 배정(§5.6)·테마 전환(§5.7) 설계 추가, 매핑 테이블에 FR-W-14~18 반영, Phase 2 검증 결과 기록, 동일 제목 중복 제거 제안 추가 |
 | v1.1 | 2026-08-22 | Phase 0·1 구현 완료. requirements.md v1.1(요약 필드 제거)에 맞춰 매핑 테이블·카드 설계(§5.4) 갱신, §5.6 요약 제외 근거 추가, 기능 업데이트 제안에 블로그 매체 제외 항목 추가 |
