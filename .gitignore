@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+
+# Build output
+dist/
+build/
+*.log
+
+# Environment
+.env
+.env.local
+
+# Credentials / secrets — NEVER commit
+access.json
+*.credentials.json
+*secret*
+*token*
+credentials/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
