@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T03:33:12+09:00",
+  "generated_at": "2026-08-23T04:24:00+09:00",
   "keywords": [
     "생성형 AI",
     "반도체",
@@ -167,6 +167,16 @@
       "published_at": "2026-08-22T21:40:44+09:00",
       "keywords": [
         "반도체"
+      ]
+    },
+    {
+      "id": "981ad19ad50aab6f6ec32c7b739a5f00e3001474",
+      "title": "[씨드투유니콘2030]㊴ 구글·엔비디아·OpenAI 등 빅테크, K스타트업에 ‘전략적 자본’ 매칭해",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1qVmU5MEYyT2NSRlcyanFzTmFhd2pzNHp0WkFYaGx1N2x1NTlzOGNMYS1jV3hjVTZxa2J5cExOaXR5WC1ScnZLRkNzY1pJcjAwTnBvUFNDeGR6NVZILXF2VnFmX2ZWVmlyekF2TA?oc=5",
+      "source": "브랜드뉴스",
+      "published_at": "2026-08-22T21:35:02+09:00",
+      "keywords": [
+        "스타트업"
       ]
     },
     {
@@ -1654,6 +1664,16 @@
       ]
     },
     {
+      "id": "b52f1af8b9c7d0e4d2dcb1abcfba11f301907325",
+      "title": "삼성 반도체 옆 아파트가 4.5억부터…경기 아파트 추천 경매",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBEUlRnU1hHS1UwTkRveU1DaDYyRTQxY05CMjBjbTRrQklxRUJ6OVdkQ0kzLTJHOE5URHZLaXdVS2k3d3hTZFZfUVVFMlMtQnhraDlqLUdwU1dYZERTWTc0Q0d0U3plVTR0aXBkYXZudEZjaktIeDM3WVVFSWZ3M03SAXNBVV95cUxPUkdHb0RuUGhuM1NVODI2dXQ1b3h4d0tWd0c3cU1ZQWppdzI2VDNmdWhXTEhWQ1NpWERiMWJnMFVpX3p1OFN1ZXBZdFd3Ykl4bXpwMkU5Mmp0M1Z5Y2NpdDJIdi1WU19TUElJeVhHZk8zMk1V?oc=5",
+      "source": "땅집고",
+      "published_at": "2026-08-22T09:15:30+09:00",
+      "keywords": [
+        "반도체"
+      ]
+    },
+    {
       "id": "0277b23a91f2aa80162c9066be8e8ed3d6fc3dfe",
       "title": "[영상] 반도체 호황에 현금 쌓여…삼성전자, 내년 주주환원 재원 188조",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5FRUVvczBaM1plSWxUY0ZscHZXQXAzX0NKTDQzOWNNOENNTWdBMU5zYmd2ZFByblJEVHNNb1M4TW55QXZGZUEtLWtPdWtvYkVrR0E?oc=5",
@@ -2993,26 +3013,6 @@
       "published_at": "2026-08-21T20:32:00+09:00",
       "keywords": [
         "주식시장"
-      ]
-    },
-    {
-      "id": "2a90499b93a555598a1f71999eff757c2e817763",
-      "title": "'역대급 반도체 초과세수' 교부금 연동 폐지하고 '미래 대응 기금' 신설",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1JWkk5MHJKS2JrYlRJRFFoRDBGUDFGdVk5YkZFTU44b3c2TWtXem1oWXVlNjBSODVpLWFSRUZ0WnR4NXZfdXNQUmNCVmZDcnk5Tlk3R1dXU1BGVkRfX0NnMVVFdExqOGp1eHFQSi1rMjNSNzQ4LXV1SNIBeEFVX3lxTFBUM1p4SzR1UXNySURWR3hMNUlRV3pGdGMyMncyNE82MXJ0VU1aamhPa3RpX3Zwc25XYTFBbGp4ZG1jLUM3LTBZTExSMjlldDlXSkRDMDI3WDFIZjFsSHBOMmtZcURKUTVFVkFNVGloWEdFd2xWRllTSQ?oc=5",
-      "source": "MBC 뉴스",
-      "published_at": "2026-08-21T20:31:12+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
-      "id": "6536c5980541c40e717a9fde938e98a598eb926e",
-      "title": "삼성전자, 반도체 협력사에 789억 푼다…안전·생산성 인센티브 지급",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE52TFJCTU5zUEJvWG0yZzhHY0NJeTRYUTNsNTFmMWxIRkZyLXRLbk1FVTNhbW45UkFwdk00eUNwdmJjek1wNy14ZUx3RU1WMlFJUFhCakF4VnlYQnljN3FkSU9qMXBDNzBfeC1TQ0FKZWFLS3BZ?oc=5",
-      "source": "대한경제",
-      "published_at": "2026-08-21T20:15:44+09:00",
-      "keywords": [
-        "반도체"
       ]
     }
   ]
