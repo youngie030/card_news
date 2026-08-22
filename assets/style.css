@@ -1,0 +1,406 @@
+/* ==========================================================================
+   card_news — 샌드 옐로우 웜 팔레트 / 조밀 카드 그리드
+   토큰 정의는 requirements.md FR-W-17·18, 계획서 §5.5~5.7 참조.
+   ========================================================================== */
+
+/* --- 색상 토큰: 라이트(기본) ------------------------------------------- */
+:root {
+  --bg: #f6f1e4;
+  --surface: #fffdf7;
+  --surface-raised: #fffefb;
+  --header-bg: rgba(255, 253, 247, 0.88);
+  --border: #e7dcc4;
+  --border-soft: #efe7d5;
+  --text: #2a2419;
+  --text-muted: #6a5f4c;
+  --text-faint: #7e7159;
+  --accent: #93630a;
+  --accent-soft: #f0e3c4;
+  --shadow: 0 6px 18px -8px rgba(112, 82, 20, 0.30);
+  --shadow-soft: 0 1px 2px rgba(112, 82, 20, 0.06);
+
+  --badge-l: 90%;
+  --badge-s: 48%;
+  --badge-text-l: 28%;
+  --badge-text-s: 60%;
+  --bar-l: 48%;
+  --bar-s: 52%;
+
+  color-scheme: light;
+}
+
+/* --- 색상 토큰: 다크 -----------------------------------------------------
+   미디어쿼리와 [data-theme="dark"] 두 곳에 정의한다. 미디어쿼리에만 두면
+   수동 선택이 시스템 설정을 이길 수 없다. [FR-W-14]
+   ------------------------------------------------------------------------ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14120d;
+    --surface: #1e1b14;
+    --surface-raised: #262218;
+    --header-bg: rgba(30, 27, 20, 0.88);
+    --border: #332d21;
+    --border-soft: #2a251b;
+    --text: #f2ebdb;
+    --text-muted: #b5a893;
+    --text-faint: #8d8271;
+    --accent: #e6b862;
+    --accent-soft: #3a3120;
+    --shadow: 0 8px 22px -10px rgba(0, 0, 0, 0.65);
+    --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.30);
+
+    --badge-l: 16%;
+    --badge-s: 25%;
+    --badge-text-l: 72%;
+    --badge-text-s: 58%;
+    --bar-l: 55%;
+    --bar-s: 45%;
+
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #14120d;
+  --surface: #1e1b14;
+  --surface-raised: #262218;
+  --header-bg: rgba(30, 27, 20, 0.88);
+  --border: #332d21;
+  --border-soft: #2a251b;
+  --text: #f2ebdb;
+  --text-muted: #b5a893;
+  --text-faint: #8d8271;
+  --accent: #e6b862;
+  --accent-soft: #3a3120;
+  --shadow: 0 8px 22px -10px rgba(0, 0, 0, 0.65);
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.30);
+
+  --badge-l: 16%;
+  --badge-s: 25%;
+  --badge-text-l: 72%;
+  --badge-text-s: 58%;
+  --bar-l: 55%;
+  --bar-s: 45%;
+
+  color-scheme: dark;
+}
+
+/* --- 리셋 ---------------------------------------------------------------- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body,
+h1,
+h2,
+p { margin: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+               "Apple SD Gothic Neo", "Segoe UI", "Malgun Gothic", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1360px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+/* --- 헤더 ---------------------------------------------------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: saturate(1.4) blur(10px);
+  -webkit-backdrop-filter: saturate(1.4) blur(10px);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 14px 10px;
+}
+
+.brand-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.brand-sub {
+  margin-top: 2px;
+  font-size: 0.75rem;
+  color: var(--text-faint);
+}
+
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.14s ease, border-color 0.14s ease, background-color 0.14s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* 현재 모드에 해당하는 아이콘만 노출한다. */
+.theme-toggle .icon { grid-area: 1 / 1; display: none; }
+.theme-toggle[data-mode="system"] .icon-system,
+.theme-toggle[data-mode="light"] .icon-light,
+.theme-toggle[data-mode="dark"] .icon-dark { display: block; }
+
+/* --- 컨트롤 (칩 + 검색) --------------------------------------------------- */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px 16px;
+  flex-wrap: wrap;
+  padding-bottom: 12px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.14s ease, border-color 0.14s ease, background-color 0.14s ease;
+}
+
+/* 선택된 칩은 해당 키워드의 어스 컬러를 그대로 쓴다. "전체" 칩은 기본 샌드(38). */
+.chip:hover {
+  border-color: hsl(var(--kw-h, 38) var(--bar-s) var(--bar-l));
+  color: hsl(var(--kw-h, 38) var(--badge-text-s) var(--badge-text-l));
+}
+
+.chip[aria-pressed="true"] {
+  background: hsl(var(--kw-h, 38) var(--badge-s) var(--badge-l));
+  border-color: hsl(var(--kw-h, 38) var(--bar-s) var(--bar-l));
+  color: hsl(var(--kw-h, 38) var(--badge-text-s) var(--badge-text-l));
+  font-weight: 600;
+}
+
+.chip-count {
+  font-size: 0.6875rem;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.chip[aria-pressed="true"] .chip-count { color: inherit; opacity: 0.75; }
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 0 1 260px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 11px;
+  width: 16px;
+  height: 16px;
+  color: var(--text-faint);
+  pointer-events: none;
+}
+
+.search input {
+  width: 100%;
+  padding: 7px 12px 7px 34px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.8125rem;
+  transition: border-color 0.14s ease;
+}
+
+.search input::placeholder { color: var(--text-faint); }
+.search input:hover { border-color: var(--accent); }
+.search input::-webkit-search-cancel-button { cursor: pointer; }
+
+/* --- 본문 ---------------------------------------------------------------- */
+.main { padding-block: 16px 32px; }
+
+.result-count {
+  margin-bottom: 10px;
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.status {
+  padding: 48px 20px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+.status[hidden] { display: none; }
+.status.is-error { color: #b3452b; }
+:root[data-theme="dark"] .status.is-error { color: #f0a68e; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .status.is-error { color: #f0a68e; }
+}
+
+/* --- 카드 그리드 [FR-W-18] ------------------------------------------------ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+  gap: 14px;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-height: 138px;
+  padding: 14px 16px 13px;
+  border: 1px solid var(--border);
+  border-left: 3px solid hsl(var(--kw-h) var(--bar-s) var(--bar-l));
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.14s ease, box-shadow 0.14s ease, background-color 0.14s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  background: var(--surface-raised);
+  box-shadow: var(--shadow);
+}
+
+.card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.badge {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: hsl(var(--kw-h) var(--badge-s) var(--badge-l));
+  color: hsl(var(--kw-h) var(--badge-text-s) var(--badge-text-l));
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+  font-size: 1.0625rem;
+  font-weight: 650;
+  line-height: 1.5;
+  letter-spacing: -0.012em;
+  color: var(--text);
+}
+
+.card:hover .card-title { color: var(--accent); }
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 2px;
+  font-size: 0.75rem;
+  color: var(--text-faint);
+}
+
+.card-source {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-meta .sep { opacity: 0.5; }
+.card-meta time { flex: none; font-variant-numeric: tabular-nums; }
+
+/* --- 푸터 ---------------------------------------------------------------- */
+.site-footer {
+  padding-block: 20px 36px;
+  border-top: 1px solid var(--border-soft);
+  color: var(--text-faint);
+  font-size: 0.75rem;
+  line-height: 1.7;
+}
+
+/* --- 반응형 미세 조정 ----------------------------------------------------- */
+@media (max-width: 560px) {
+  .wrap { padding-inline: 14px; }
+  .search { flex: 1 1 100%; }
+  .grid { gap: 10px; }
+  .card { min-height: 0; }
+  .card-title { font-size: 1rem; -webkit-line-clamp: 3; line-clamp: 3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+  .card:hover { transform: none; }
+}

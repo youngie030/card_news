@@ -25,3 +25,8 @@ credentials/
 .idea/
 .DS_Store
 Thumbs.db
+
+# AI 지시문 — 커밋 금지
+CLAUDE.md
+USERRULE.md
+.claude/
