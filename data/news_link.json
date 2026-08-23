@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T21:42:56+09:00",
+  "generated_at": "2026-08-23T22:33:21+09:00",
   "keywords": [
     "생성형 AI",
     "반도체",
@@ -10,6 +10,76 @@
   "count": 300,
   "items": [
     {
+      "id": "aee9d18d61055f0859e544d20ce063a95a0ebd70",
+      "title": "[\"최고급 모델도 깎아준다\"…성능 평준화 속 불붙은 AI 가격 전쟁] 오픈AI, 최상위 모델 API 가격 인하…단일 모델 경쟁 넘어 적재적소 잇는 ‘오케스트레이션’으로 판도 변화 2. 임팩트·도발적형",
+      "link": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE9UQ1d3ZUpGeGlfZUdjVC1EMkpfVnUzUnYxa3M2OXFBVVNhRUtueC1VTmxybzFOeDk5M3hLZDlLSnM?oc=5",
+      "source": "AI넷",
+      "published_at": "2026-08-23T22:22:20+09:00",
+      "keywords": [
+        "생성형 AI"
+      ]
+    },
+    {
+      "id": "46565d1acf9482b6ecee2ce18ab48825a84dbe50",
+      "title": "금요일 또 12% 상승, AI가 선택한 에너지 주식 +90% 돌파",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE54N19qS2FjU09mempESnNMX0thQUNWeC1ZZWl1a3kwam5tb2lya05Nc3B2MkVTclM4ZWFBcmdYdTU3NjlRemppdVU5c2NDa01jRDFjZFY1OFNzeEs1cDF3czg5NzcwN09pMmJLd09jVGM?oc=5",
+      "source": "Investing.com 한국어",
+      "published_at": "2026-08-23T22:10:00+09:00",
+      "keywords": [
+        "주식시장"
+      ]
+    },
+    {
+      "id": "5c8a9c8cffa8a6c7d63f9a3621f43513200170bb",
+      "title": "“솔직히 테슬라 버리고 가는게 빠르죠”…M6 ETF 나온다는데",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5YWXpCU2ZDMV9zc1V3WHp3M2xUNWQxMU80WWI5RlFPU2pYRkQ3cndkODRjUUQ0RFBUcnNNUGhlQTBRYVhiWnRwRUoyRlpHVC1oMUE?oc=5",
+      "source": "매일경제 마켓",
+      "published_at": "2026-08-23T22:01:57+09:00",
+      "keywords": [
+        "주식시장"
+      ]
+    },
+    {
+      "id": "626fbc85fdde84c660af9397a5ae4aa9c76b9292",
+      "title": "금리 상승기에 '성장주'만 바라보면 안 된다더니…주가를 결정짓는 '뜻밖의 변수' [주식R]",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxai1PMXZGMDRuMnZvR2d4VUlJajl5UVZHRjZKNlZuX2lvVXBuXy04UmpidmM0azZsRTlMeFVaWnVrYWozZnU5SGdKUkFZYTg?oc=5",
+      "source": "v.daum.net",
+      "published_at": "2026-08-23T22:01:31+09:00",
+      "keywords": [
+        "금리"
+      ]
+    },
+    {
+      "id": "67778382780d15b2472e639ae8db13e430bc8261",
+      "title": "Coca-Cola Hit a Record High. Is the Safety Really Worth It?",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQVFaZGptX010dHZkd1ZfMTNPMWRGRFhBNkJ6QmhFVVhBMS1mVXlLZjBXcWV2d2x4U3hkejkwX3Zfa0dSOVZBNFRFb2JpbDg2QWRNSEoyYU5mUmpJRU1hdWtTVzFlbjFPS19IVTZzNWh6VWpfRVI3R3JMMkZQcnRlTFZRLXl5WFhOWEQwZ0dyRTg?oc=5",
+      "source": "TIKR.com",
+      "published_at": "2026-08-23T21:56:49+09:00",
+      "keywords": [
+        "주식시장"
+      ]
+    },
+    {
+      "id": "fd513db0bee39b11ae753a3529241db4b9c404b9",
+      "title": "9월 제조업 경기 개선 전망…반도체·바이오 기대감 높아",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE01QWZhWEhjN0xWSF93TUxnYUJrLUxiV0tGd2VyQ2ltSlRINWRCWXFxeEtzalVEYm1UMzR1ajJCd3FtT2xKUVpzbVlnSUw2TDk3emdvV1lrd1p5cXRkLUhvS3pJc0E?oc=5",
+      "source": "entv.kr",
+      "published_at": "2026-08-23T21:51:43+09:00",
+      "keywords": [
+        "반도체"
+      ]
+    },
+    {
+      "id": "61d5de46e47cfda4dc3207b5736b6622f67d9537",
+      "title": "[특별 대담] 이상일 용인특례시장 “세계 최대 반도체 도시 완성…교통·교육·문화 함께 키울 것”",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1iazhQM3lnNWZqTkU1d1ZYaUNyWkFCci1iSkhPVjRjX2xTZ01heEMyNHhaUWtGcGs3bnY5enhramRQWGkxX1F0QVlINDV0b0FsV1R5NHFqMkh4Ykt6T28tUkpLa0dhaWRU?oc=5",
+      "source": "매일타임즈",
+      "published_at": "2026-08-23T21:39:16+09:00",
+      "keywords": [
+        "반도체"
+      ]
+    },
+    {
       "id": "6aca1846a353561a5d1c8d83f23be120394fb68f",
       "title": "[하버드 비즈니스 스쿨, AI 아바타로 맞춤형 피드백 제공하며 교육 혁신 나서] HBS의 8주간 스타트업 부트캠프 '파운드리(Foundry)'는 699달러의 참가비로 운영되며, 매주 실제 강사들과의 라이브 세션을 제공",
       "link": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFB1TGNkVDJnVjJNc3JWRFZjcjlwYjF1d0haRXg1bTBrYVgwcWRGS0t5a0VGeU9KWnpMRC1YOEtNRjc?oc=5",
@@ -17,6 +87,16 @@
       "published_at": "2026-08-23T21:36:56+09:00",
       "keywords": [
         "스타트업"
+      ]
+    },
+    {
+      "id": "7b0f60502e2fdd6252350d67d7b1b8850bc97689",
+      "title": "엔비디아도 못 버틴 메모리값⋯AI 서버 가격 15% 인상 예고",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAtc2tGWkJKQWFYMXZrOTlvblVlZm9UdFJPNUpiM19wVFdHeXFWSndoVlNkMmhweWQwRmd4N20xMnhyZmRMR0ZRd1BVd3NjM00?oc=5",
+      "source": "v.daum.net",
+      "published_at": "2026-08-23T21:35:08+09:00",
+      "keywords": [
+        "반도체"
       ]
     },
     {
@@ -107,6 +187,16 @@
       "published_at": "2026-08-23T20:16:00+09:00",
       "keywords": [
         "금리"
+      ]
+    },
+    {
+      "id": "ea534a0f9b93e377703347c6ad925fd0a05776b5",
+      "title": "'따상' 기대했는데 잇따른 쪽박에 \"바로 팔자\"...석 달 만에 '-34%'",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5mM3RvUkpwNnZCUU90SjNBZjExbFBCeTJYbGRGWTNzc0U0NHNIalVwYnAyOVpLOHFEakczblBwNWRKZDQ0UmRXTEttbXh6ek0?oc=5",
+      "source": "v.daum.net",
+      "published_at": "2026-08-23T20:11:50+09:00",
+      "keywords": [
+        "주식시장"
       ]
     },
     {
@@ -221,9 +311,9 @@
       ]
     },
     {
-      "id": "c18b33012efcd40e945979390029fccae157f00a",
-      "title": "영상일본이 어쩌다 이렇게까지 됐나…‘세계 최악 빚더미’ 오명 썼는데 금리까지 오른다",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBqUm0tNXE3R212eWVSUkZQMW1CQUc2bWtVeEdVbkJhNGY2UjdDcWRQMEZ0Umx4NkpVTE1uM096UnpsRkRqT21vUHdsRXgwNC1DVVM2OVgyQm1DcXYz?oc=5",
+      "id": "714b917f4e55f3c8358550cd830c9b3fc03b1712",
+      "title": "[영상] 일본이 어쩌다 이렇게까지 됐나…‘세계 최악 빚더미’ 오명 썼는데 금리까지 오른다",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1CeERzVm5HRDgyUFNvNjBfNm40ZjExdHF0OThQX1ZyQ18xTnhDajVRMUFwWVJQa25HTjRRRmhaQXRVUkxnS18xajZERkhobWw0dVE?oc=5",
       "source": "서울경제",
       "published_at": "2026-08-23T19:24:39+09:00",
       "keywords": [
@@ -249,6 +339,16 @@
       "keywords": [
         "반도체",
         "주식시장"
+      ]
+    },
+    {
+      "id": "5b21bcaede4806d54386378e1839ef264c8bba2c",
+      "title": "오픈AI, 최고급 'GPT-5.6 솔' 가격 한시 인하…3개월간 20%↓",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5FWG9WMkdEbHlTb3JPWWx1bWgwT2wzZWtmWFV1MjNya1ZxUmktOTV0MU9mWWJKRXVqakpEb3dVaWpONjVCQjZaNG9hdjhxQQ?oc=5",
+      "source": "전자신문",
+      "published_at": "2026-08-23T19:04:59+09:00",
+      "keywords": [
+        "생성형 AI"
       ]
     },
     {
@@ -312,11 +412,11 @@
       ]
     },
     {
-      "id": "cdb2751d3d7150981c12bdcb096a47a5c76d6217",
+      "id": "2921e749b6c37465313ac23a8ca3a4b266fb2534",
       "title": "금리, 이달 연속 인상하나…국채금리 급등에 신중론도",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9jRk4xMVgycmZsQWp6SDFydF9ZbWtSUms5Y2Rwd2VXRTVsUFNJQ2dhM1ExRzhGUFUzai1HSU9mLUYyMTVnNWhjOTk0SUhQS2p2QXY4?oc=5",
-      "source": "네이트",
-      "published_at": "2026-08-23T18:26:00+09:00",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5uTTJOYTczOFVfT2tXOVBDeVc3RDZsZ3Y5VHZVTTJtMk12NGV1TzBhaWI2WVptcHRUckNBZllVdURyYXRQS1ptRFJ0LTEzc3c3Z0E?oc=5",
+      "source": "서울경제",
+      "published_at": "2026-08-23T18:25:24+09:00",
       "keywords": [
         "금리"
       ]
@@ -367,6 +467,16 @@
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VN3B3NVBrRE01LW9VWkhLamo3Q013eHhfWVd0cWQ1N25ucEg2QnJCYXY5VjBaV05WeGxqTy1Qd3lGQnlZc2VpdEd2RFNpdnJkVEdOTTV5XzUyUQ?oc=5",
       "source": "한국경제",
       "published_at": "2026-08-23T18:18:25+09:00",
+      "keywords": [
+        "반도체"
+      ]
+    },
+    {
+      "id": "a5085f1b3c685c8576a9ae12cb3069670be47805",
+      "title": "기고·이현〉800조 반도체 시대, 공장보다 먼저 사람의 마음을 준비해야 한다",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5PcGlQUlFKQXIzWkRKaFFlSmZHTENJZWRXMEl0UUNwaU40ck9zTDdsbE1RWDZYVFVSU1dYSERqMV9GUTNvT2ROUERIZFZSa2ViaFhpUXRJUDRyS0FXZGZQU2k5SmRCd1I4c0k5QncyWQ?oc=5",
+      "source": "진일보",
+      "published_at": "2026-08-23T18:13:29+09:00",
       "keywords": [
         "반도체"
       ]
@@ -590,6 +700,16 @@
       "published_at": "2026-08-23T17:00:00+09:00",
       "keywords": [
         "스타트업"
+      ]
+    },
+    {
+      "id": "2abc65c8040b4a318fc003cb2bf1047ae4b9fd72",
+      "title": "김용범, 광주 반도체 부지 찾는다…국가산단 확대 주목",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1MbEQ4N1lpaEUxVS1pdWZ3blRwZk1nU25aQTZnR1hwSmZUWU5yTDN0QlR2ZHN6elhsZlI2b1RJYWRpTFBHSWduRDJvUnNxdXlfU3F2X2ZQVE5WQ1lKT3U1WE9uZXJ0azZRSUNUc3lYdw?oc=5",
+      "source": "진일보",
+      "published_at": "2026-08-23T16:57:40+09:00",
+      "keywords": [
+        "반도체"
       ]
     },
     {
@@ -923,6 +1043,16 @@
       ]
     },
     {
+      "id": "f902944344842fa1d7e886d2ff074bd8fca97653",
+      "title": "[이준기의 과·알·세] 가뭄 해소·반도체 용수난 ‘지하수’ 활용 관건…\"지표수 외 수자원 다변화 필요\"",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5Da2U3bVg2c3d0U3MzdWlkbWJ6SzlDcTBzaFZYM1lVcGJDN2NCV21fdmNQa3hMamxZc2t6cEt1aUpqY2VJeFZ6ODl6bGlVQQ?oc=5",
+      "source": "dt.co.kr",
+      "published_at": "2026-08-23T15:21:36+09:00",
+      "keywords": [
+        "반도체"
+      ]
+    },
+    {
       "id": "f45c3cc54b1fc096da3844f7d8c58ce9b04a7904",
       "title": "여야, 반도체 호황 추가세수 ‘미래대응기금’ 적립 방안 공방",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9lcGE5cUF3OGt5Z0dQeVE3a0JKSkQzcFNQNVk0VUJpUVBUNjlFdHdfV1Q2ODdDZDFCUW5xMEtpNzZkbDZYdmNkZEowNEFLZWl6V1pDWjVtZjRMQjdTYXJoc0pmODVSZ29oRlNUSVlCNA?oc=5",
@@ -1030,6 +1160,16 @@
       "published_at": "2026-08-23T15:02:12+09:00",
       "keywords": [
         "주식시장"
+      ]
+    },
+    {
+      "id": "659b3db833644e9dbf21febc9b3cd4d3c8990844",
+      "title": "네패스, 충북반도체고에 5억5천400만원 상당 반도체 장비 기증",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1uQnk1OUlCSjcyQmwtbmFWWllFdUQ4UzZsSVM4Tl9FVXF2RGliajM0VGRKTXNYNWt6YUdkbHI0TFVyVDUzM2xuMGU1VjhMLWpiYlV2U2JUczFaVjkzb3V1LVpfLVNzM19TSEHSAW5BVV95cUxQWm1aZUQzSDE0eGhUcnBoNU5HbkdVZTVnU3RPYkV0YndsSG9iR2F4T2dRTkN4OUJDblNudFVtZXU3VkE2STV3UnZFQV9vT1FNbmtqbzFhUjNNaVFjY3dLWXZYT1hUUTdPT3lxb0Z4UQ?oc=5",
+      "source": "중부매일",
+      "published_at": "2026-08-23T15:02:03+09:00",
+      "keywords": [
+        "반도체"
       ]
     },
     {
@@ -1373,16 +1513,6 @@
       ]
     },
     {
-      "id": "bd60d59be7b4481a409a673d0fcf1f995f38fa47",
-      "title": "최태원 이어 정의선·이재용…李대통령, ‘AI·반도체 원팀’ 재정비",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1Jall1bW03MzJCTzNoZ0FiT0ozOGlTd1hPMUNQb0xSclJWQlJNekJ4c2RtQy1odVZrWEJMUzRjNDBGZDRCbWMzSWpvMy1HY28?oc=5",
-      "source": "v.daum.net",
-      "published_at": "2026-08-23T13:34:43+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
       "id": "a9c2ab2de1382044628ca496958c82b27ae31196",
       "title": "일본 확장재정 '부메랑'…내년 나랏빚 원리금 부담 17% '껑충'",
       "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5BUWg1alhjWHdMOXh4RzluTXhFSlAxTUdBSndmczNpdVNGdk96d1FzX0hsa01OUXBBd3dSZXlxcVFkRlZtYmh4R090V3BwbGc?oc=5",
@@ -1390,6 +1520,16 @@
       "published_at": "2026-08-23T13:33:03+09:00",
       "keywords": [
         "금리"
+      ]
+    },
+    {
+      "id": "01432e17b2b3202e5a94abd88267fcb149ced793",
+      "title": "최태원 이어 정의선·이재용…李대통령, ‘AI·반도체 원팀’ 재정비",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9kNTllRHh3b1hxLW5YV25qU3FIcE0ybWI2WXhnVkpyVlRQSzZMWXlpT2sxazlISXl1YloyeGZuMzRnSmJya2NZR1RJcUZEQQ?oc=5",
+      "source": "dt.co.kr",
+      "published_at": "2026-08-23T13:32:45+09:00",
+      "keywords": [
+        "반도체"
       ]
     },
     {
@@ -1458,6 +1598,16 @@
       "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9NOUxzU05zZG03akFja3FHNWVWTmxaM25rWnVXVkwwaE1PTTh6bzRib2d3ZHdDb1l1dWg3N25qbE5tLUlXejR1STlST3E4QkU?oc=5",
       "source": "v.daum.net",
       "published_at": "2026-08-23T13:06:09+09:00",
+      "keywords": [
+        "금리"
+      ]
+    },
+    {
+      "id": "c410fb35c03838bf0d6467ceafb5bd9e16a70600",
+      "title": "갚아야 할 국채 319조…일본 확장재정 청구서",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1iczY1TGdQYnp0ZHQwNE05OUJqSHQwdGl6OVdMNXFjWDk3N2YwdFJCcDZuVGJVNDBQaUlWNzNxTVhWX1FkNDRLZlc4YjdMQQ?oc=5",
+      "source": "dt.co.kr",
+      "published_at": "2026-08-23T13:04:36+09:00",
       "keywords": [
         "금리"
       ]
@@ -2861,157 +3011,6 @@
       "published_at": "2026-08-23T08:48:01+09:00",
       "keywords": [
         "금리"
-      ]
-    },
-    {
-      "id": "8583dd76c70ee280e117dd82ed85050df6685525",
-      "title": "“지금이라도 튈까요”… 반도체 쏠림에 코스닥 개미들 ‘비명’",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBMSTZ5TFVVVFdJWnhwY0hQTU83Vy1hY1V0RnBCY2R4dkpyWUFxcDYyV3BadlNTeWdISWMtX3BIOTgxZzkycXdvYXhWQUpER0V4S0xTZm00WkvSAVRBVV95cUxPeGE2aVZ3Y0ZWUnRDQ1gtQ1dRcFpqZHVRNWhadHcyTjBPNjB6cnlaenY0OE1XaHI5ME1UYkd5cXVkZDVMRjJlWnVTS1FySUoxNVA0bk8?oc=5",
-      "source": "세계일보",
-      "published_at": "2026-08-23T08:47:35+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
-      "id": "f0489ea17a21239da2576c16248432926aae9aa4",
-      "title": "[증시전망] 코스피 7000선 시험대...엔비디아 실적·美 국채금리 주목",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB5TUVPSHpjNVpxRDltQU1mSmNka1g1UzR0WmxNaDVvTlhEMHBlYjlVUkdVUWU3X2V6bXBvV2VMdWRqY0piQld1ZmtIWW9BdW11eTZmQ1laYzJES0h1SFZnaWZMaE05dDhrZkhJSk9hLWpnV3M?oc=5",
-      "source": "디지털투데이",
-      "published_at": "2026-08-23T08:46:00+09:00",
-      "keywords": [
-        "금리"
-      ]
-    },
-    {
-      "id": "96be0a914c7ad8802c50b92d9ffce07d56517613",
-      "title": "테슬라 2㎚ 칩 승부수 띄운 삼성 파운드리…SK하이닉스 '빛의 연결' CPO 로드맵 [위클리반도체]",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xQ1JMbDRKZElnWGo2YUg1SWVMc1Fqd25ERURFbG9MRC1FV1FqUWdhb2FYTUJrUUdqOS1MVTJlVldod1dObUFlQnhVc1dDV04xT1IyYlJ1UUNBTGNkSlFyV0JUZTg?oc=5",
-      "source": "디지털데일리",
-      "published_at": "2026-08-23T08:40:18+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
-      "id": "659768504850669cc119170d6d1a33541a33967c",
-      "title": "AI가 바꾸는 테헤란로… 강남구, ‘10주 실전 AX’로 초기 창업자 사활 건다",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5vNk5laWtQbkRheHo4VEJvdTVfMEo5djZ6X2FsV3ROSTI5RXF6cmZBNVNBZkh3cEVuQTFBNjlYR1A5NGthcGFNZkRQdktva2JUR3pMU3NVVy1BNTBsRFZ0T0NQUzRRa1NpRjBnLVk0a1o?oc=5",
-      "source": "미디어써치",
-      "published_at": "2026-08-23T08:37:53+09:00",
-      "keywords": [
-        "스타트업"
-      ]
-    },
-    {
-      "id": "35618fa9c57e19fd8a8cc603a0385f9316497834",
-      "title": "전남광주통합특별시, 2026년 조직개편안 입법예고…'반도체실 신설·총정원 54명 증원'",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1pZzg2SVJFNnZTd1ZyUWdTLWpsaU1reTJTTkM3cUtIdFFWaGxxVE9mdUNxSGFzd0RQbFFBZFc3VnA2SUpBd1RMQzI3T1B5anVsSDE2aERING16emVIYVFCSVNnNjBhUHBxX0VZ?oc=5",
-      "source": "퍼블릭뉴스통신",
-      "published_at": "2026-08-23T08:32:54+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
-      "id": "04b533e384964d5100a1c3747ca5768dd27868f1",
-      "title": "[글로벌 주간 브리핑] 관세전쟁 다시 격화…AI·반도체는 ‘가격 인상’ 국면으로",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1lS2p4emE0RV9NZnVLeHZWSmFfcnQxTV8ySXlPeHpVYkVMYmZ6QndyT2xqUVpudy12RGhNbWk4cDY5d2JodEg2U3pCMTJyeE43cGNnYS1DN0NTMDNEZ05kUEU2SGRUVU16OEE?oc=5",
-      "source": "월요신문",
-      "published_at": "2026-08-23T08:32:38+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
-      "id": "bd4e670f74d8e8887f26a4075656d0c0d4b8bac3",
-      "title": "'2030 광주産 반도체 양산' 청사진은…연말엔 63만평 개발 시작",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE80THMyQ3BXWkVFYzVsNXpUaU1IRWprVDZaTndIUDMyZGctenVNa3JDWHNDaHg1b3Z2WncxX0F5OXpxMDdXbWJtWWNsMHFqT1IyZFQ3VUZKU0RZaUh5SzM3ZdIBeEFVX3lxTE8yLUx6REdNWWNSdmtxLTFkaFNsUDJsSXRUSkhXVmhsblVzTTB3ZXowM0NkRTRJb3pLX0NrSF92NjJkTDFRd2JPOFRGbnhUVjVONVVFNmJreXc0SmhkbE9xNF9BaDNJUDhrNzVSUmN4aFFNOV9yOXktbw?oc=5",
-      "source": "뉴시스",
-      "published_at": "2026-08-23T08:30:00+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
-      "id": "c7d0accce2fdbff2a74cbd2a406bd61c65fed764",
-      "title": "8월 금리 '백투백 인상' 촉각…성장·집값 vs 환율·물가",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VTGhzT0RCX2dIVVJPeTVWY3JPNGpHS3FiQXppOWc1SjJDQnRFekc1b3pOYTlFZzNpcVlZY3pLUlJObDhwMGRtTzEyVkhoTEdiTFZMY1QwZGlfQQ?oc=5",
-      "source": "파이낸셜뉴스",
-      "published_at": "2026-08-23T08:20:59+09:00",
-      "keywords": [
-        "금리"
-      ]
-    },
-    {
-      "id": "e4714540fc2db66fa0a7d1a169ca9e2879a2f41a",
-      "title": "예탁금 한방에 단일종목 레버리지 거래 '뚝'…사이드카는 계속",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9RYzZQM1hGajJBa2dCU3hKNUNtNllrMTFLSWtlelJmNWE3S21TbWc5NHV0OEQxZlo0TUg2SDQ5VWk1Wl9vM0lvTVVtX0s1RXhEdFdEbW04T0gwSjhFd1JkZms2NEktdTJXdVZfVUU2bDA?oc=5",
-      "source": "연합인포맥스",
-      "published_at": "2026-08-23T08:10:14+09:00",
-      "keywords": [
-        "주식시장"
-      ]
-    },
-    {
-      "id": "7ba6c59a1125e92b55b11469c5c97a458024a44d",
-      "title": "금리에 막힌 코스피, 주주환원이 받친다…\"대형주 딱 붙어있어라\"",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1BQ0hBb2FyMUpoSkktekdBLVY0WUtqalZaMGZ2ZzNjSmd6bG5NZndrVnRxSWhpWldSTEg4Yjh0Z0x5bE9IQk93RnlQWF96a1dXQjdrUEl3QXJUbmlrX093STVpMkJ3SFJjN0JJS2k3eDXSAXRBVV95cUxOMW5OZE80TzZUMGwyWXFnQk1GWE5OcXd1M0UtajhrZUl0UEdoV0l0WXRMTmZXaW9ZODdCS2Y1Y1o3MG5DZjhWaTZsN1QzQW1BMUx0dlFkVHdPb1RtTjR3SWs0ZHVOdFVSdTNTN1VrNWV1SFRnTQ?oc=5",
-      "source": "연합인포맥스",
-      "published_at": "2026-08-23T08:05:05+09:00",
-      "keywords": [
-        "금리"
-      ]
-    },
-    {
-      "id": "f77a11cd7a23282ad59ea1906822219442eeaa8b",
-      "title": "엔비디아, 中 맞춤형 AI칩 출시설 부인…“계획 없다”",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4tNjdnckp3SHdITEdhRFNRcFEwQWlGSXVqS01yOHM4amFmTEN0OEJNb24xWGxTczdYSXBGeTJTaGpYNWxsckpCUDBLZHo3dHFrWXVtZHpZdzgtMGlHU3MyR095YXI?oc=5",
-      "source": "서울경제TV",
-      "published_at": "2026-08-23T08:00:04+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
-      "id": "43d4c8f158b7ef6cb0b62e6d2c2b49cd6d676b84",
-      "title": "[인터뷰] '최고민수' 박민수 \"삼전닉스 등 AI·반도체 주가 상승 여력…ETF 간접투자 유리\"",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9lU29VWGFTaFcyck82eVZUR2huZjlmdkJhZEgzeldpZGtQNjNWUVlwc2V6T0VJRHVmamJJZnFtb09aVm9SQUpndl9FQm1rYzNiRnVpMkR1RE9uMDNCcXFVcXdMcVpnVUdDM2c?oc=5",
-      "source": "주간조선",
-      "published_at": "2026-08-23T08:00:00+09:00",
-      "keywords": [
-        "반도체"
-      ]
-    },
-    {
-      "id": "1f901e8ec74def15ba7b0f59f4da1edc2d5d62c2",
-      "title": "[주간금융이슈] 한은, 금리 또 인상할까…27일 통화정책방향 회의 관심",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9uUC1zT1hiWVR2UXJaejROVFd0MGZvVlFPTmZXWXZBQzl0UmdvamN5MGJyQUFDNzhMQ1Q5QWE5aG03OF9BSDM4cFkwdlREVmJqQTRVRE1Bc0FRalI0?oc=5",
-      "source": "뉴스핌",
-      "published_at": "2026-08-23T08:00:00+09:00",
-      "keywords": [
-        "금리",
-        "주식시장"
-      ]
-    },
-    {
-      "id": "967a160431518266205491ab7534ad4b119bdf28",
-      "title": "\"중남미 우주산업 단일창구…K-우주기업의 핵심 파트너 되겠다\"",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5zN2VUa1NLaDJuQWxIYW5zalNfOExfWUxfdVBqSVpieTdXRmZMemV0b2x6ak1aMHlpeW1oUmtQSlpfRTBDdUFNbWVEMkkxbjNMOGVFN1RBU09YUlNKcWJIZWN1RktXUEktQVHSAW9BVV95cUxOVVRWVHlwVkJEUGs4VE9nR1JBcWFyTFllWENoSTNTaFFyYzc5czlFVWUtMldudkpyVHJVZkpDTXg2enl2RFdhT1luUXpnRUhYcVRYYWdxRmtpZ1I3SzF2SGRhc3BrOGVvV2F5WGJjQnc?oc=5",
-      "source": "머니투데이",
-      "published_at": "2026-08-23T08:00:00+09:00",
-      "keywords": [
-        "스타트업"
-      ]
-    },
-    {
-      "id": "5f6bd21a79440569795639d08d09e2889c0a7912",
-      "title": "강원도립대, 창업·AI 역량 강화로 지역인재 정주 기반 넓힌다",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5yalpPQUJXMlRhZGNIWm16RzdVaG9LZlR5YXREWW5XbFNhUG5OMVdweWM1TnF2NF94UWlmSWdlbEw4VjlQYU5nTGJaWDdtMnRFeGJPd05YSF9qTE85d2lTNkVhLVdFXzlt?oc=5",
-      "source": "강원신문",
-      "published_at": "2026-08-23T07:56:21+09:00",
-      "keywords": [
-        "생성형 AI"
       ]
     }
   ]
