@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T01:28:00+09:00",
+  "generated_at": "2026-08-24T02:22:08+09:00",
   "keywords": [
     "생성형 AI",
     "반도체",
@@ -1219,6 +1219,16 @@
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBMMzR3RkUwZ2RWYjYwVDNRakRfcDZDLUhUcVZ2OVpVTEpjX0ZYS3dMMUpYR2ZSUllHZWtiWVVEVnFSOFh0dTI1T0R6cFdQTlFUaUd4NEE0RGVaa0FseEd0aHRmY05pMGxTR091dnFn0gFyQVVfeXFMTURka3F6SE1IUXgtRzRFSVVmY3ppQko1bzY4dnJIaE5fMkdsZmUwODhwdzdVeTM2dmRKTzZMakpfdEtGakZuYzJfQ0RiUE45bTlIU0M1aF9JenB1UnJnQ3RaajEwaHMyNEpYZmt0cWh0enFR?oc=5",
       "source": "AI포스트",
       "published_at": "2026-08-23T15:15:22+09:00",
+      "keywords": [
+        "반도체"
+      ]
+    },
+    {
+      "id": "83ecd16c0bc058185e2f0af3a329ed68dedc2dae",
+      "title": "네패스, 충북반도체고에 교육훈련장비 16대 기증",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE93UUVkUGszenJoWVVzRDJOV010Y3lBUTdDSmJUZkVhTm43SWliNkFkZU05TVF2TVpoSndMRjF2VFVLMkNWdVZIUFNvbm1qUm1PX2dmLWk5S3VUaF9oZHVsUlJ5RWpCOFJmM19B?oc=5",
+      "source": "동양일보",
+      "published_at": "2026-08-23T15:14:37+09:00",
       "keywords": [
         "반도체"
       ]
@@ -2615,6 +2625,16 @@
       ]
     },
     {
+      "id": "7fdd1e532d0d67401bc27cb7cf2cbf510e9d9b41",
+      "title": "\"코스피 빠져도 얘들은 간다\"…지금 눈여겨 볼 '알파' 6종목 [주末머니]",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tZk1IZ1J1bnRFM0czVHl5RFFjSW81MTZtQTdJRE4tZ25tRUR1ZjZtN1JHM2Y0aWc3d1piTUs5NkI0d3dXTF9xeFZXVnFwejNxYTgtOFEzZTJGVWxZd2pjRU9B?oc=5",
+      "source": "아시아경제",
+      "published_at": "2026-08-23T10:05:00+09:00",
+      "keywords": [
+        "주식시장"
+      ]
+    },
+    {
       "id": "d2e15f4bc4372aa1f0ec9cf4dc9f55a8a5f0dea7",
       "title": "주주환원으로 불씨 살린 코스피…엔비디아·금리가 다음 고비 [주간증시]",
       "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0xaWg3UEFRbENSNkZTVklGaFZVYm5EdHdXeS1ZMnNkc3VSTjJCQVBYcTN2RVdaN2FXdW5iT3M4bFd6WW9BdGU0UkJiRHBIWTE4WlpfcndYZmk5SnRzSUE?oc=5",
@@ -2992,26 +3012,6 @@
       "published_at": "2026-08-23T09:05:04+09:00",
       "keywords": [
         "반도체"
-      ]
-    },
-    {
-      "id": "d12e71688e8a0c26adab056e9a508f22768b6262",
-      "title": "LG유플러스·구글 AI 협력 확대…콘텐츠 창작 인재 육성",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5yZUxpX052bzF3aEJBQjhsdmFhQjJnZ0FtVHM0c0ZKc05QMENvOWVpd1lHWUlUbDlOdHVVZGNlZ0pBb0hzdjlUMEYwX0lkdzRkdndRLWVKOEFYR3RabGxIMEVYaEs?oc=5",
-      "source": "포쓰저널",
-      "published_at": "2026-08-23T09:02:17+09:00",
-      "keywords": [
-        "생성형 AI"
-      ]
-    },
-    {
-      "id": "1991154469492b501e6cffc17a8dd3e7e0ae2c4a",
-      "title": "“하루도 빠짐없이 쓸어 모아”…개미들 금 투자 러시, 골드바 매물도 완판 [원자재로 살아남기]",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5UZURvcTBDeTlCbzBOYlgtX1hsSXA1N2MxM2dNbGlJODkwaXNNWlFkUWpQaW41ZDFTU09OVFBjSXBncjZraTFER1VoalRrMENjRGc?oc=5",
-      "source": "매일경제",
-      "published_at": "2026-08-23T09:01:09+09:00",
-      "keywords": [
-        "주식시장"
       ]
     }
   ]
