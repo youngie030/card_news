@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T23:19:05+09:00",
+  "generated_at": "2026-10-25T02:55:58+09:00",
   "keywords": [
     "생성형 AI",
     "반도체",
@@ -9,6 +9,57 @@
   ],
   "count": 300,
   "items": [
+    {
+      "id": "d3f95281228e3fe924b3061fa9f2d2bbf96c1f4e",
+      "title": "\"이런 적은 처음\"…1300원대 환율과 금리 변수에 증시 흔들리나",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5jRGlUMkl6cFJKa0N4NW9jVWFZQkZkcm1MbGd1eUtZNnc2N3hOQlpLME1YWGhzVl9Bd1NzRGZvM0QwOVpzcjZXYWZ3M2J1YWhMMS1nTktrRXZZYTk5RnBOR9IBeEFVX3lxTE9PSm54S0JjbWdiZnFXLXF1bzdkZUJKYWNLQzhWVVJBemtjWlIxdC1rWmgzMTNwQUxQelVnQnBfVVRBb0JTUXJKaDdGbU9xOGowVG9YV0U0MlhnUHBxbGpMWkVTYzZ1NktEYS1mTlI4ZTFuSnpYM0pjRQ?oc=5",
+      "source": "뉴시스",
+      "published_at": "2026-10-25T01:02:00+09:00",
+      "keywords": [
+        "금리",
+        "주식시장"
+      ]
+    },
+    {
+      "id": "ab96b76ed8a93537eb85d61e0ca4688ac913734d",
+      "title": "美연준, 내주 금리 동결하나…시장에선 12월은 추가 인상 전망",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9XMXp6YnVicUpPZ2lnX0NJVUNsUVV4eHJCRllwUlJseFc2ZGgxVlk1MUJkSjE5eEJwcVdpbm5uazZPWTVmakdiR3NNX3hUS092WkNpTm1ISU5UVFhVcU15SWpNeFdTTkk?oc=5",
+      "source": "연합뉴스TV",
+      "published_at": "2026-10-25T00:52:00+09:00",
+      "keywords": [
+        "금리"
+      ]
+    },
+    {
+      "id": "736b7e00f8199367f9f8b20561ee9bd6fc660600",
+      "title": "美연준, 내주 금리 동결할까…시장은 '12월 추가 인상' 전망",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBHbzgzLTBCNk9LWlgzMXFjU3BWZEJaMkVQUkhkRENYLTQ3bGtfM1QwQXFvTnp2TEZvQUJ4eXBMbHJkYnBVMng5Rjg5WlBrQUlQUlE?oc=5",
+      "source": "매일경제 마켓",
+      "published_at": "2026-10-25T00:39:36+09:00",
+      "keywords": [
+        "금리"
+      ]
+    },
+    {
+      "id": "a3532147f650e32a2f2355bfadc593ac004c49e7",
+      "title": "전남광주시의회, 호남권 반도체클러스터 ‘국가 전폭 지원’ 촉구",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9TYVZpakgtOFY5U2FyZGZFZmxNckh4eXYzVzVwZzFHcTVpdVRwZUVjSVFsa1U4WXpjNzlrU1k5WnZzVGM2X0lFbWh0TEMteWhPMzZFR05VbTdaSjRv?oc=5",
+      "source": "아시아뉴스통신",
+      "published_at": "2026-10-25T00:07:09+09:00",
+      "keywords": [
+        "반도체"
+      ]
+    },
+    {
+      "id": "548cad7f7820bb0b302ef36a71261f5adcc00aae",
+      "title": "\"퇴직금 3억 몰빵했다가 열흘 만에 3000만원 날려\"…50대 명퇴자의 눈물",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1mYnFpZm9XMl9VUWhDNVVpUEJCLTQ4VzBqM29pR3hkdFFuZFkwbkJUZVVvVXFqbDNwTlpic2NFSk9RR0ZJMnhOOGxoOWF0SWZjdFYtZFFyYUd4Q2x3SjBySNIBeEFVX3lxTE1EX3prLVh5M19nQXVDUGp1LTRlVGRtSUhxMV9LTTNNNHR4N1NlbmF2eGlqYkJLbXIycEp6ZWNpN2tna1VCNTBpSGh6MlpyQzYzZ2ZreUpZSXhYbmNqZm14MFpFTmxEa2xyaEhvWTg0aVRXRjNrdU11Zg?oc=5",
+      "source": "뉴시스",
+      "published_at": "2026-10-25T00:00:00+09:00",
+      "keywords": [
+        "주식시장"
+      ]
+    },
     {
       "id": "b1162ce8531d74b4b7150c2d38c643973e7d2d8e",
       "title": "인도네시아 증권거래소, MSCI 회동 직후 전격 제외된 80개 종목은…?",
@@ -2961,56 +3012,6 @@
       "published_at": "2026-10-23T17:38:47+09:00",
       "keywords": [
         "반도체"
-      ]
-    },
-    {
-      "id": "febd8f19446098c281e133e1929bd007e3099fbe",
-      "title": "코스피, 5300선까지 추락 후 상승 반전…SK하이닉스 4%대 강세 By EBN",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9uR29aMzJhZlZxLVFwM2RBQjFVeXEwaFZtWERzWHpSX0xPODBxLW1YcjV1VjVPOGpFdmUyUlpqUjk0cE9ZMGtCbE5PWW9YOUMxTE1EdlFyVGkxY3RwOHdJR0hGMWc3UEhlWnNHMzMyWm4?oc=5",
-      "source": "Investing.com 한국어",
-      "published_at": "2026-10-23T17:38:08+09:00",
-      "keywords": [
-        "주식시장"
-      ]
-    },
-    {
-      "id": "9436fbfec2cc558c353e01f1888051387b696629",
-      "title": "안도걸 의원, “대한민국 경제 펀더멘털 개선... 금리·환율 코리아 프리미엄”",
-      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5uenZpQ0tzRDVQWWtZM242X2xWR180R1JYTFF3dHk4V3ZmN3dzTW5YemgtMF83Tkp1Y2Y3RnRQN19JYWlnYkE?oc=5",
-      "source": "일등방송",
-      "published_at": "2026-10-23T17:38:00+09:00",
-      "keywords": [
-        "금리"
-      ]
-    },
-    {
-      "id": "17855c0664d40a10d55197e340f7f325a8577718",
-      "title": "기술주 급락의 충격파, 나스닥 2.6% 하락... 메타의 AI 투자 향방은?",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zZDFncUwyeldtMjdjdmdHeWJTMXFhWUdHQ2lfbFdYLVljNFpGbkNjbzYtQnFRV2xfU3dRa05fdUZZaHgzMWNlVEwyTFpVTjZtNm40OUJuQTVvc0h1SmotYmNfMkdWY2E5?oc=5",
-      "source": "공감신문",
-      "published_at": "2026-10-23T17:36:07+09:00",
-      "keywords": [
-        "주식시장"
-      ]
-    },
-    {
-      "id": "1a790995d8e178788f04dc0ea1bc243067eb42a8",
-      "title": "홈플러스 금리 인하·공공배달앱 개편 요구에…이소영 \"지원방안 재검토\"",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8ydV9MYVBvby0tbEhab2otckZqWC1sZm5sVVlyY0xrWmhvY1E4NXF4NmlVX0YyTmpCVk0xamRyNThkamc3Nmpqdnp1WFN5Z1ZTYVlSRGRBZUjSAVRBVV95cUxOdEFIUFoyUVUzWC05NURUaU0tNWM0RW9CdkljbGtXUktZMFR1ZURpeGpuc0dvYlpRa0JwRmFrVFlDZGp5RGRNNEdsM1ZscjVQVmxHM2s?oc=5",
-      "source": "세계일보",
-      "published_at": "2026-10-23T17:35:16+09:00",
-      "keywords": [
-        "금리"
-      ]
-    },
-    {
-      "id": "5b9794f7fabf5ffbb8be60c2cc54f7cf100290cd",
-      "title": "美 안전자산 선호에 국고채 금리 일제히 하락…10년물 4.097%",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1vZlFaaHJvc3RrZHRuVzFVbUlJYUZlTzltZGRBcXN0dHYtV2VPejg1X1FnZExXb0dlQUp1Z0xMY2NZWTFIWldGeXRJNXZZc0J6dHZXcGgtX0RSQy1XQmh1T0hzWm55TUwyRHc?oc=5",
-      "source": "청년일보",
-      "published_at": "2026-10-23T17:34:37+09:00",
-      "keywords": [
-        "금리"
       ]
     }
   ]
